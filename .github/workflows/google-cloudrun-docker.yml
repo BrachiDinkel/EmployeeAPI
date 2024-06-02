@@ -49,10 +49,16 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID: affable-beach-425122-t1 # TODO: update Google Cloud project id
-  GAR_LOCATION: us-centrall # TODO: update Artifact Registry location
+  PROJECT_ID: affable-beach-425122-t1 # TODO: update Google Cloud project i
+  
+  #cloud run
   SERVICE: employeeapi # TODO: update Cloud Run service name
-  REGION: us-centrall # TODO: update Cloud Run service region
+  REGION: us-central1 # TODO: update Cloud Run service region
+  
+  #artificat registery repository
+  GAR_LOCATION: us-central1 # TODO: update Artifact Registry location
+  ART_REG: employee # TODO: update Cloud Run Service name
+  IMAGE: employeeserver
 
 jobs:
   deploy:
